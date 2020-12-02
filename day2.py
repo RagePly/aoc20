@@ -7,10 +7,10 @@ correctPasswords = 0
 
 for password_entry in data:
     tmp = password_entry.strip().split(" ")
-    pswRange = tmp[0].split("-")
+    pswRange = [int(x) for x in tmp[0].split("-")]
     pswChr = tmp[1][0]
     chrRepeats = tmp[2].count(pswChr)
-    if int(pswRange[0]) <= chrRepeats <= int(pswRange[1]):
+    if pswRange[0] <= chrRepeats <= pswRange[1]:
         correctPasswords += 1
 
 print(correctPasswords)
@@ -24,9 +24,9 @@ correctPasswords = 0
 
 for password_entry in data:
     tmp = password_entry.strip().split(" ")
-    pswPos = tmp[0].split("-")
+    pswPos = [int(x) for x in tmp[0].split("-")]
     pswChr = tmp[1][0]
-    if ((tmp[2][int(pswPos[0])-1] == pswChr) ^ (tmp[2][int(pswPos[1])-1] == pswChr)):
+    if ((tmp[2][pswPos[0]-1] == pswChr) ^ (tmp[2][pswPos[1]-1] == pswChr)):
         correctPasswords += 1
 
 print(correctPasswords)
