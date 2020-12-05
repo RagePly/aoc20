@@ -1,6 +1,6 @@
 valid_keys = ["byr","iyr","eyr","hgt","hcl","ecl","pid"]#,"cid")
 valid_keys.sort()
-with open("../aoc20data/day4.txt", "r") as f:
+with open("data/day4.txt", "r") as f:
     data = [x.strip() for x in f.readlines()]
 
 passport_entries = []
@@ -38,7 +38,7 @@ hcl = re.compile(r"#[0-9a-f]{6}")
 
 valid_keys = ["byr","iyr","eyr","hgt","hcl","ecl","pid"]#,"cid")
 valid_keys.sort()
-with open("../aoc20data/day4.txt", "r") as f:
+with open("data/day4.txt", "r") as f:
     data = [x.strip() for x in f.readlines()]
 
 passport_entries = []

@@ -1,4 +1,4 @@
-tmp = open("../aoc20data/data1.txt", "r").readlines()
+tmp = open("data/data1.txt", "r").readlines()
 flag = False
 for expense in tmp:
     for expense2 in tmp:

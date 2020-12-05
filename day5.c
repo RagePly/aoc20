@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	FILE *fIn = fopen("../aoc20data/day5.txt", "r");
+	FILE *fIn = fopen("data/day5.txt", "r");
 	if (!fIn) {
 		printf("FNF\n");
 		return -1;

@@ -1,5 +1,5 @@
 # TASK 1 ===============================================
-with open("../aoc20data/day3.txt","r") as f:
+with open("data/day3.txt","r") as f:
     tmp = f.readlines()
 
 tree_map = [list(line.strip()) for line in tmp]
@@ -19,7 +19,7 @@ for y in range(0,rows):
 print(passed)
 
 # TASK 2 ===============================================
-with open("../aoc20data/day3.txt","r") as f:
+with open("data/day3.txt","r") as f:
     tmp = f.readlines()
 
 tree_map = [list(line.strip()) for line in tmp]

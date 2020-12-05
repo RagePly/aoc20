@@ -1,6 +1,6 @@
 # PART 1
 # =============================================================================
-with open("../aoc20data/day2.txt","r") as f:
+with open("data/day2.txt","r") as f:
     data = f.readlines()
 
 correctPasswords = 0
@@ -17,7 +17,7 @@ print(correctPasswords)
 
 # PART 2
 # =============================================================================
-with open("../aoc20data/day2.txt","r") as f:
+with open("data/day2.txt","r") as f:
     data = f.readlines()
 
 correctPasswords = 0

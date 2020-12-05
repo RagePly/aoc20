@@ -1,4 +1,4 @@
-with open("../aoc20data/day5.txt", "r") as f:
+with open("data/day5.txt", "r") as f:
     data = [list(x.strip()) for x in f.readlines()]
 
 ids = []
@@ -25,7 +25,7 @@ for x in data:
 print(max(ids))
 
 
-with open("../aoc20data/day5.txt", "r") as f:
+with open("data/day5.txt", "r") as f:
     data = [x.strip() for x in f.readlines()]
 
 def rec_bin_find(ranges: tuple, remaining_instructions: list):
