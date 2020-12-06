@@ -1,24 +1,27 @@
-# with open("data/day6.txt", "r") as f:
-#     data = [x.strip() for x in f.readlines()]
-# 
-# group_answers = []
-# buffer = []
-# for line in data:
-#     if line == "":
-#         group_answers.append(buffer)
-#         buffer = []
-#     else:
-#         [buffer.append(c) for c in list(line) if c not in buffer]
-# 
-# group_answers.append(buffer)
-# 
-# result = 0
-# for x in group_answers:
-#     result += len(x)
-# 
-# print(result)
+
+# TASK 1 ========================================================
+with open("data/day6.txt", "r") as f:
+    data = [x.strip() for x in f.readlines()]
+
+group_answers = []
+buffer = []
+for line in data:
+    if line == "":
+        group_answers.append(buffer)
+        buffer = []
+    else:
+        [buffer.append(c) for c in list(line) if c not in buffer]
+
+group_answers.append(buffer)
+
+result = 0
+for x in group_answers:
+    result += len(x)
+
+print(result)
 
 
+# TASK 2 ========================================================
 with open("data/day6.txt", "r") as f:
     data = [x.strip() for x in f.readlines()]
 
@@ -52,6 +55,5 @@ for c in buffer:
             verified_c.append(c)
 
 group_res.append(full_answers)
-
 
 print(sum(group_res))
