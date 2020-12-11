@@ -15,14 +15,10 @@ for x in sort_data:
     threes += 1 if diff == 3 else 0
     ones += 1 if diff == 1 else 0
 
-print(ones, threes, threes * ones)
-
+print(threes * ones)
 
 '''
-16, 10, 15, 5, 1, 11, 7, 19, 6, 12, 4
-1, 4, 5, 6, 7, 10, 11, 12, 15, 16, 19
-
-work backwards? and save all configs 
+work backwards and save all configs 
 [22, 19, 16, 15, 12, 11, 10, 7, 6, 5, 4, 1, 0]
 19 1 (19 -> 22 (1))
 16 1 (16 -> 19 (1))
