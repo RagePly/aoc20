@@ -50,7 +50,6 @@ The first bus' criteria = 0 and its' freq is added to respective vars, prev_ts a
 The following is done for each bus:
     its frequency and offset from bus one is noted, respectivly: freq, crit
     Starting from the previous time past criterias were met, incrementing in steps of the frequency those criteria are fullfilled:
-        the nr of cycles completed before the timestamp + 1 is saved to nr
         if ts + criteria is divisible by the freq, prev_ts = ts and the amount of timesteps required for the
         frequency of the previous criteria and the current bus frequency to sync is saved to prev_freq, which now becomes the new
         frequency of which the current criteria is fullfilled.
