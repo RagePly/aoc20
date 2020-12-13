@@ -35,12 +35,7 @@ for x in b[1:]:
     i = 0
     while True:
         ts = i*prev_freq + prev_ts
-        nr = ts//freq + 1
-        tmp = crit - (nr*freq - ts) # If the remaining time to the criteria "fits" an entire cycle, this term // freq will be > 0 and another cycle should be added
-        if tmp > 0:
-            nr += tmp//freq
-
-        if crit == nr*freq - ts:
+        if (ts + crit) % freq == 0:
             prev_freq = prev_freq * freq // math.gcd(freq, prev_freq)
             prev_ts = ts
             break
@@ -56,8 +51,7 @@ The following is done for each bus:
     its frequency and offset from bus one is noted, respectivly: freq, crit
     Starting from the previous time past criterias were met, incrementing in steps of the frequency those criteria are fullfilled:
         the nr of cycles completed before the timestamp + 1 is saved to nr
-        if the remaining time untill the criteria is met fits more than an entire cycle of the bus, add that many cycles to nr
-        if the time differense between ts and nr*freq is equal to the critera, prev_ts = ts and the amount of timesteps required for the
+        if ts + criteria is divisible by the freq, prev_ts = ts and the amount of timesteps required for the
         frequency of the previous criteria and the current bus frequency to sync is saved to prev_freq, which now becomes the new
         frequency of which the current criteria is fullfilled.
 
