@@ -41,4 +41,21 @@ def task2(data):
         last = age
     return last
 
-print(task2([12,1,16,3,11,0]))
+@timer
+def task2_alt(data):
+    '''Brute force method, slightly optimized compared to task1'''
+    d = {}
+    [d.update({data[i]:i+1}) for i in range(len(data)-1)]
+    last = data[-1]
+    for i in range(len(data), 30000000):
+        if not last in d:
+            age = 0
+            d.update({last:i})
+        else:
+            age = i - d[last]
+            d[last] = i
+        last = age
+    return last
+
+
+print(task2_alt([12,1,16,3,11,0]))
