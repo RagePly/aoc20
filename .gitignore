@@ -6,3 +6,7 @@
 
 # Ignore data folder
 data/
+
+# Ignore rust solution
+rust_solutions/
+
