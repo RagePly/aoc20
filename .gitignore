@@ -8,5 +8,5 @@
 data/
 
 # Ignore rust solution
-rust_solutions/
+rust-solutions/
 
