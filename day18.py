@@ -170,7 +170,6 @@ def rec_evaluate(expression):
                 left = left + value
             else:
                 left = left * value
-            right = None
             op = ""
 
         i += 1
