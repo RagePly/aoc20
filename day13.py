@@ -39,7 +39,7 @@ for x in b[1:]:
             prev_freq = prev_freq * freq // math.gcd(freq, prev_freq)
             prev_ts = ts
             break
-        i += 1      
+        i += 1
 
 print(prev_ts)
 
