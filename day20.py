@@ -92,7 +92,7 @@ def rec_build(tile_index, set_index, tile_data ,coord=[0,0], visited=set(), tile
     # The tile map that is recursivly built is updated with the current index, coordinate and new image data
     tile_map.update({tile_index:(coord, current_map_arr)})
 
-    # If all tiles has been fitted, return the completed tile-map...
+    # If all tiles has been fitted, finish this recursive thread...
     if set_index == visited:
         return
     
