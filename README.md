@@ -10,4 +10,4 @@ This year had me try out the module *itertools* for the first time.
 I also learnt about context managers using **with-as** statements, **list processing** and the data type **set**. 
 
 ## Timing
-Based on a single trial, all challenges run consecutively takes 110.607 seconds to complete. The avarage time is 4.424 seconds. The quickest is day 13 with a 22ms execution time and the slowest is day 17 woth a 31.284 second execution time.
+Based on a single trial, all challenges run consecutively takes 110.607 seconds to complete. The avarage time is 4.424 seconds. The quickest is day 13 with a 22ms execution time and the slowest is day 17 with a 31.284 second execution time.
