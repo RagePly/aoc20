@@ -1,4 +1,3 @@
-
 # TASK 1 ========================================================
 with open("data/day6.txt", "r") as f:
     data = [x.strip() for x in f.readlines()]
@@ -19,7 +18,6 @@ for x in group_answers:
     result += len(x)
 
 print(result)
-
 
 # TASK 2 ========================================================
 with open("data/day6.txt", "r") as f:

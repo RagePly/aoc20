@@ -26,7 +26,7 @@ for instruction, value in data:
     else:
         pos[1] -= value
 
-print("Y = {}, X = {}, M = {}".format(pos[0],pos[1], abs(pos[0]) + abs(pos[1])))
+print(abs(pos[0]) + abs(pos[1]))
 
 # TASK 2 =============================================================================
 with open("data/day12.txt", "r") as f:
@@ -62,4 +62,4 @@ for instruction, value in data:
     else:
         waypoint[1] -= value
 
-print("Y = {}, X = {}, M = {}".format(ship_pos[0],ship_pos[1], abs(ship_pos[0]) + abs(ship_pos[1])))
+print(abs(ship_pos[0]) + abs(ship_pos[1]))

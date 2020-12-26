@@ -66,7 +66,7 @@ for y in data:
         if x[taken]:
             count += 1
 
-print("Task 1: " + str(count))
+print(count)
 
 # TASK 2 ============================================================================================================
 isFloor = 0
@@ -139,4 +139,4 @@ for y in data:
     for x in y:
         if x[taken]:
             count += 1
-print("Task 2: " + str(count))
+print(count)

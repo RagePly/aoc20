@@ -12,20 +12,8 @@ for i in range(len(data), 2020):
 print(last)
 
 # TASK 2 ==================================================
-import time
 data = [12,1,16,3,11,0]
 
-def timer(f):
-    def wrapper(*args, **kwargs):
-        t = time.time()
-        ret = f(*args, **kwargs)
-        t = time.time() - t
-        print("Execution time = {}s".format(t))
-        return ret
-    
-    return wrapper
-
-@timer
 def task2(data):
     '''Brute force method, slightly optimized compared to task1'''
     d = {}
@@ -41,7 +29,6 @@ def task2(data):
         last = age
     return last
 
-@timer
 def task2_alt(data):
     '''Brute force method, slightly optimized compared to task1'''
     d = {}

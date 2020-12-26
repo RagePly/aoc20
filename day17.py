@@ -70,7 +70,7 @@ for i in range(6):
         if not a in active:
             active.append(a)
 
-print(len(active), max(active), active)
+print(len(active))
 
 # TASK 2 ============================================================================
 import time
@@ -160,4 +160,4 @@ for i in range(6):
             active_cells.append(a)
             cell_map[a[0]][a[1]][a[2]][a[3]] = True
 
-print(len(active_cells), time.time() - t1)
+print(len(active_cells))

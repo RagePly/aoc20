@@ -8,7 +8,7 @@ accumulator = 0
 executedOperations = []
 while programPointer < len(program):
     if programPointer in executedOperations:
-        print("At index {}, accumulator = {}".format(programPointer, accumulator))
+        print(accumulator)
         break
 
     executedOperations.append(programPointer)
@@ -66,7 +66,7 @@ for i in nopInstructions:
     prog_cpy[i][0] = "jmp"
     res = executeProgram(prog_cpy)
     if res[0]:
-        print("At index {}, nop -> jmp, accumulator = {}".format(i,res[1]))
+        print(res[1])
         quit()
 
 for i in jmpInstructions:
@@ -74,5 +74,5 @@ for i in jmpInstructions:
     prog_cpy[i][0] = "nop"
     res = executeProgram(prog_cpy)
     if res[0]:
-        print("At index {}, jmp -> nop, accumulator = {}".format(i,res[1]))
+        print(res[1])
         quit()

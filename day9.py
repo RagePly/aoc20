@@ -16,7 +16,7 @@ for i in range(preample_len,len(data)):
             break
     else:
         invalid = z
-        print("First invalid: {}".format(z))
+        print(z)
         break
 
 # TASK 2 ========================================================================
@@ -27,5 +27,5 @@ for i in range(0,len(data)):
         if sum(rgn) > invalid:
             break
         elif sum(rgn) == invalid:
-            print("Weakness: {}".format(min(rgn) + max(rgn)))
+            print(min(rgn) + max(rgn))
             quit()

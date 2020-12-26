@@ -1,3 +1,4 @@
+# TASK 1 ============================================================================
 with open("data/day5.txt", "r") as f:
     data = [list(x.strip()) for x in f.readlines()]
 
@@ -24,7 +25,7 @@ for x in data:
 
 print(max(ids))
 
-
+# TASK 2 ============================================================================
 with open("data/day5.txt", "r") as f:
     data = [x.strip() for x in f.readlines()]
 
@@ -49,4 +50,4 @@ for x in data:
     seats[8*rec_bin_find((0,127), x[:7]) + rec_bin_find((0,7),x[7:])] = True
 
 my_pass = [i for i in range(1,(8*128)-1) if seats[i-1] and seats[i+1] and not seats[i]]
-print(my_pass)
+print(my_pass[0])
